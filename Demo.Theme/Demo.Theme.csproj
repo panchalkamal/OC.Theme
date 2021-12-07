@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <OutputType>Library</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="OrchardCore.Theme.Targets" Version="1.0.0-rc2-13450" />
+		<PackageReference Include="OrchardCore.ContentManagement" Version="1.0.0-rc2-13450" />
+		<PackageReference Include="OrchardCore.DisplayManagement" Version="1.0.0-rc2-13450" />
+		<PackageReference Include="OrchardCore.ResourceManagement" Version="1.0.0-rc2-13450" />
+		<PackageReference Include="OrchardCore.Title" Version="1.0.0-rc2-13450" />
+	</ItemGroup>
+
+</Project>

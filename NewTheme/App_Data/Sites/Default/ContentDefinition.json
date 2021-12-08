@@ -199,11 +199,12 @@
       "Settings": {
         "ContentTypeSettings": {
           "Creatable": true,
+          "Listable": true,
           "Draftable": true,
           "Versionable": true,
-          "Listable": true,
           "Securable": true
-        }
+        },
+        "FullTextAspectSettings": {}
       },
       "ContentTypePartDefinitionRecords": [
         {
@@ -211,7 +212,7 @@
           "Name": "LandingPage",
           "Settings": {
             "ContentTypePartSettings": {
-              "Position": "8"
+              "Position": "6"
             }
           }
         },
@@ -245,7 +246,7 @@
             "ContentTypePartSettings": {
               "DisplayName": "Services",
               "Description": "Provides a collection behavior for your content item.",
-              "Position": "3"
+              "Position": "2"
             },
             "BagPartSettings": {
               "ContainedContentTypes": [
@@ -266,7 +267,7 @@
             "ContentTypePartSettings": {
               "DisplayName": "Portfolio",
               "Description": "Provides a collection behavior for your content item.",
-              "Position": "4"
+              "Position": "3"
             }
           }
         },
@@ -277,7 +278,7 @@
             "ContentTypePartSettings": {
               "DisplayName": "About",
               "Description": "A collection of milestones",
-              "Position": "5"
+              "Position": "4"
             },
             "BagPartSettings": {
               "ContainedContentTypes": [
@@ -288,33 +289,18 @@
         },
         {
           "PartName": "BagPart",
-          "Name": "Team",
+          "Name": "HomeSlider",
           "Settings": {
             "ContentTypePartSettings": {
-              "DisplayName": "Team",
-              "Description": "Team members",
-              "Position": "6"
+              "DisplayName": "Home-Slider",
+              "Description": "Display Home Slider Information",
+              "Position": "5"
             },
             "BagPartSettings": {
               "ContainedContentTypes": [
-                "TeamMember"
-              ]
-            }
-          }
-        },
-        {
-          "PartName": "BagPart",
-          "Name": "Clients",
-          "Settings": {
-            "ContentTypePartSettings": {
-              "DisplayName": "Clients",
-              "Description": "Provides a collection behavior for your content item.",
-              "Position": "7"
-            },
-            "BagPartSettings": {
-              "ContainedContentTypes": [
-                "Client"
-              ]
+                "HomeSlider"
+              ],
+              "DisplayType": "Slider"
             }
           }
         }
@@ -323,7 +309,13 @@
     {
       "Name": "Service",
       "DisplayName": "Service",
-      "Settings": {},
+      "Settings": {
+        "FullTextAspectSettings": {},
+        "ContentTypeSettings": {
+          "Creatable": true,
+          "Listable": true
+        }
+      },
       "ContentTypePartDefinitionRecords": [
         {
           "PartName": "Service",
@@ -581,8 +573,8 @@
       ]
     },
     {
-      "Name": "About",
-      "DisplayName": "About",
+      "Name": "HomeSlider",
+      "DisplayName": "Home-Slider",
       "Settings": {
         "ContentTypeSettings": {
           "Creatable": true,
@@ -595,8 +587,8 @@
       },
       "ContentTypePartDefinitionRecords": [
         {
-          "PartName": "About",
-          "Name": "About",
+          "PartName": "HomeSlider",
+          "Name": "HomeSlider",
           "Settings": {
             "ContentTypePartSettings": {
               "Position": "1"
@@ -861,32 +853,7 @@
     {
       "Name": "Milestone",
       "Settings": {},
-      "ContentPartFieldDefinitionRecords": [
-        {
-          "FieldName": "TextField",
-          "Name": "Date",
-          "Settings": {
-            "ContentPartFieldSettings": {
-              "DisplayName": "Date",
-              "Position": "0"
-            }
-          }
-        },
-        {
-          "FieldName": "MediaField",
-          "Name": "Image",
-          "Settings": {
-            "ContentPartFieldSettings": {
-              "DisplayName": "Image",
-              "Position": "1"
-            },
-            "MediaFieldSettings": {
-              "Required": true,
-              "Multiple": false
-            }
-          }
-        }
-      ]
+      "ContentPartFieldDefinitionRecords": []
     },
     {
       "Name": "Client",
@@ -1007,5 +974,5 @@
       ]
     }
   ],
-  "Identifier": "4qyxh40hmwntsx6awe1sn8tbcr"
+  "Identifier": "4am4wva5hb425tphg4nhww26ne"
 }

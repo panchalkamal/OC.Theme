@@ -1,1 +1,7 @@
 NewTheme/wwwroot/is-cache/
+ThemeCreation/wwwroot/is-cache/
+ThemeCreation/obj/
+ThemeCreation/Localization/
+ThemeCreation/bin/
+ThemeCreation/.vs/
+MyTheme/obj/
